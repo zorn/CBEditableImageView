@@ -4,7 +4,7 @@ CBEditableImageView is a subclass of NSImageView that resembles the editable ima
 
 ## Demo Movie
 
-Coming soon.
+<http://media.clickablebliss.com/blog/movies/CBEditableImageViewDemo.mov>
 
 ## Details
 
