@@ -12,4 +12,13 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+@property (strong) NSImage *mainImage;
+@property (strong) NSNumber *shouldDisableImageView;
+
+#pragma mark -
+#pragma mark Actions
+
+- (IBAction)editIcon:(id)sender;
+- (IBAction)clearIcon:(id)sender;
+
 @end

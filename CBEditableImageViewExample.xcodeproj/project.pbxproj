@@ -13,6 +13,10 @@
 		1A1CF1631447485B00741AE2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1A1CF1611447485B00741AE2 /* Credits.rtf */; };
 		1A1CF1661447485B00741AE2 /* CBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CF1651447485B00741AE2 /* CBAppDelegate.m */; };
 		1A1CF1691447485C00741AE2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1CF1671447485C00741AE2 /* MainMenu.xib */; };
+		1A1CF172144748A800741AE2 /* CBEditableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CF171144748A800741AE2 /* CBEditableImageView.m */; };
+		1A1CF1751447492400741AE2 /* EditableImageViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CF1741447492400741AE2 /* EditableImageViewDelegate.m */; };
+		1A1CF17714474A3F00741AE2 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1CF17614474A3F00741AE2 /* Quartz.framework */; };
+		1A1CF17914474D1700741AE2 /* imageview_dropdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1CF17814474D1700741AE2 /* imageview_dropdown.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +25,20 @@
 		1A1CF1551447485B00741AE2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		1A1CF1561447485B00741AE2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1A1CF1571447485B00741AE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1A1CF15A1447485B00741AE2 /* CBEditableImageViewExample-Info.plist */ = {isa = PBXFileReference; path = "CBEditableImageViewExample-Info.plist"; sourceTree = "<group>"; };
+		1A1CF15A1447485B00741AE2 /* CBEditableImageViewExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBEditableImageViewExample-Info.plist"; sourceTree = "<group>"; };
 		1A1CF15C1447485B00741AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A1CF15E1447485B00741AE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A1CF1601447485B00741AE2 /* CBEditableImageViewExample-Prefix.pch */ = {isa = PBXFileReference; path = "CBEditableImageViewExample-Prefix.pch"; sourceTree = "<group>"; };
+		1A1CF1601447485B00741AE2 /* CBEditableImageViewExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBEditableImageViewExample-Prefix.pch"; sourceTree = "<group>"; };
 		1A1CF1621447485B00741AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		1A1CF1641447485B00741AE2 /* CBAppDelegate.h */ = {isa = PBXFileReference; path = CBAppDelegate.h; sourceTree = "<group>"; };
+		1A1CF1641447485B00741AE2 /* CBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBAppDelegate.h; sourceTree = "<group>"; };
 		1A1CF1651447485B00741AE2 /* CBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAppDelegate.m; sourceTree = "<group>"; };
 		1A1CF1681447485C00741AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1A1CF170144748A800741AE2 /* CBEditableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBEditableImageView.h; sourceTree = "<group>"; };
+		1A1CF171144748A800741AE2 /* CBEditableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBEditableImageView.m; sourceTree = "<group>"; };
+		1A1CF1731447492400741AE2 /* EditableImageViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditableImageViewDelegate.h; sourceTree = "<group>"; };
+		1A1CF1741447492400741AE2 /* EditableImageViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableImageViewDelegate.m; sourceTree = "<group>"; };
+		1A1CF17614474A3F00741AE2 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		1A1CF17814474D1700741AE2 /* imageview_dropdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageview_dropdown.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1CF17714474A3F00741AE2 /* Quartz.framework in Frameworks */,
 				1A1CF1531447485B00741AE2 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +57,7 @@
 		1A1CF1431447485B00741AE2 = {
 			isa = PBXGroup;
 			children = (
+				1A1CF16F144748A800741AE2 /* Source */,
 				1A1CF1581447485B00741AE2 /* CBEditableImageViewExample */,
 				1A1CF1511447485B00741AE2 /* Frameworks */,
 				1A1CF14F1447485B00741AE2 /* Products */,
@@ -63,6 +75,7 @@
 		1A1CF1511447485B00741AE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A1CF17614474A3F00741AE2 /* Quartz.framework */,
 				1A1CF1521447485B00741AE2 /* Cocoa.framework */,
 				1A1CF1541447485B00741AE2 /* Other Frameworks */,
 			);
@@ -84,6 +97,8 @@
 			children = (
 				1A1CF1641447485B00741AE2 /* CBAppDelegate.h */,
 				1A1CF1651447485B00741AE2 /* CBAppDelegate.m */,
+				1A1CF1731447492400741AE2 /* EditableImageViewDelegate.h */,
+				1A1CF1741447492400741AE2 /* EditableImageViewDelegate.m */,
 				1A1CF1671447485C00741AE2 /* MainMenu.xib */,
 				1A1CF1591447485B00741AE2 /* Supporting Files */,
 			);
@@ -100,6 +115,16 @@
 				1A1CF1611447485B00741AE2 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A1CF16F144748A800741AE2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1A1CF170144748A800741AE2 /* CBEditableImageView.h */,
+				1A1CF171144748A800741AE2 /* CBEditableImageView.m */,
+				1A1CF17814474D1700741AE2 /* imageview_dropdown.png */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +181,7 @@
 				1A1CF15D1447485B00741AE2 /* InfoPlist.strings in Resources */,
 				1A1CF1631447485B00741AE2 /* Credits.rtf in Resources */,
 				1A1CF1691447485C00741AE2 /* MainMenu.xib in Resources */,
+				1A1CF17914474D1700741AE2 /* imageview_dropdown.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +194,8 @@
 			files = (
 				1A1CF15F1447485B00741AE2 /* main.m in Sources */,
 				1A1CF1661447485B00741AE2 /* CBAppDelegate.m in Sources */,
+				1A1CF172144748A800741AE2 /* CBEditableImageView.m in Sources */,
+				1A1CF1751447492400741AE2 /* EditableImageViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +234,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -232,6 +261,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -249,6 +279,7 @@
 		1A1CF16D1447485C00741AE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CBEditableImageViewExample/CBEditableImageViewExample-Prefix.pch";
 				INFOPLIST_FILE = "CBEditableImageViewExample/CBEditableImageViewExample-Info.plist";
@@ -260,6 +291,7 @@
 		1A1CF16E1447485C00741AE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CBEditableImageViewExample/CBEditableImageViewExample-Prefix.pch";
 				INFOPLIST_FILE = "CBEditableImageViewExample/CBEditableImageViewExample-Info.plist";
