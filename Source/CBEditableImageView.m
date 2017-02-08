@@ -46,12 +46,6 @@
         [[NSColor colorWithCalibratedWhite:0.000 alpha:0.400] set];
         NSRect fillRect = NSMakeRect(hoverOverlayInset, hoverOverlayInset, self.bounds.size.width - hoverOverlayInset*2, self.bounds.size.height - hoverOverlayInset*2);
         NSRectFillUsingOperation(fillRect, NSCompositeSourceOver);
-        
-        // draw dropdown icon
-        NSImage *dropdown = [[NSBundle mainBundle] imageForResource:@"imageview_dropdown.png"];
-        NSRect inRect = NSMakeRect(self.bounds.size.width-hoverOverlayInset-dropdown.size.width - 5.0, fillRect.origin.y + 5.0, dropdown.size.width, dropdown.size.height);
-        NSRect fromRect = NSMakeRect(0, 0, dropdown.size.width, dropdown.size.height);
-        [dropdown drawInRect:inRect fromRect:fromRect operation:NSCompositeSourceOver fraction:1.0];
     }
 }
 
