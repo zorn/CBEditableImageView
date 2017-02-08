@@ -42,9 +42,10 @@
     
     if (self.isHovering && self.isEnabled) {
         
+    if (self.isEditable) {
         // draw black
-        [[NSColor colorWithCalibratedWhite:0.000 alpha:0.400] set];
-        NSRect fillRect = NSMakeRect(hoverOverlayInset, hoverOverlayInset, self.bounds.size.width - hoverOverlayInset*2, self.bounds.size.height - hoverOverlayInset*2);
+        [[NSColor colorWithCalibratedWhite:0.000 alpha:0.300] set];
+        NSRect fillRect = NSMakeRect(0, 0, self.bounds.size.width, 18);
         NSRectFillUsingOperation(fillRect, NSCompositeSourceOver);
     }
 }
